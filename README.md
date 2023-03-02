@@ -68,23 +68,6 @@ src/
 
 </samp>
 
-```bash
-# Clone o repositÃ³rio
-$ git clone https://github.com/LaraSharmon/Projeto-API-Redmi.git
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd clÃ­nicaApi
-
-# Instale as dependÃªncias
-$ npm install
-
-# Execute a aplicaÃ§Ã£o 
-$ npm start
-
-# Acesse o servidor
-$ <http://localhost:6020>
-```
-
 ## Rotas CRUD
 
 ### [ 1 ] <em>Fisioterapeuta</em>

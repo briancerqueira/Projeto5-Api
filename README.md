@@ -1,18 +1,17 @@
-# projeto-5-individual-Api
-
-
-# Projeto individual MÃ³dulo 5
-
-
-
-# [ API ] ClÃ­nica de Fisioterapia
-### ðŸ“‘ DescriÃ§Ã£o
-Desenvolvimento da <em>**API REST**</em> no **padrÃ£o MVC** que retorna informaÃ§Ãµes das entidades de um estÃºdio de tatuagem e efetua todas as operaÃ§Ãµes **CRUD**: ``Fisioterapeuta``, ``Pacientes``, ``Agendamento``, ``Equipamentos``.
+# Projeto INDIVIDUAL (05) , Plataforma Resilia 
 
 
 
 
-**[ Tecnologias ]**
+
+# [ API ] FUTEBOL
+
+Desenvolvimento de uma Api, que retorna as entidades em :  **CRUD**: ``Jogos``, ``Estádios``, ``Campeonatos``, ``Equipes``.
+
+
+
+
+**[Tecnologias utilizadas ]**
 
 <samp>
   
@@ -22,36 +21,36 @@ Desenvolvimento da <em>**API REST**</em> no **padrÃ£o MVC** que retorna inform
 
 <details>
 <summary>  
-  <strong>Estrutura do DiretÃ³rio</strong>
+  <strong>Estrutura do diretório</strong>
 </summary>
 <br>
 
 ```
 src/
 â”œâ”€ controllers/
-â”‚  â”œâ”€ FisioterapeutaController.js
-â”‚  â”œâ”€ PacientesController.js
-â”‚  â”œâ”€ AgendamentoController.js
-â”‚  â””â”€ EquipamentosController.js
+â”‚  â”œâ”€ JogosController.js
+â”‚  â”œâ”€ EstádiosController.js
+â”‚  â”œâ”€ CampeonatosController.js
+â”‚  â””â”€ EquipesController.js
 â”œâ”€ dao/
-â”‚  â”œâ”€ FisioterapeutaDAO.js
-â”‚  â”œâ”€ PacientesDAO.js
-â”‚  â”œâ”€ AgendamentoDAO.js
-â”‚  â””â”€ EquipamentosDAO.js
+â”‚  â”œâ”€ JogosDAO.js
+â”‚  â”œâ”€ EstádiosDAO.js
+â”‚  â”œâ”€ CampeonatosDAO.js
+â”‚  â””â”€ EquipesDAO.js
 â”œâ”€ models/
-â”‚  â”œâ”€ Fisioterapeuta.js
-â”‚  â”œâ”€ Pacientes.js
-â”‚  â”œâ”€ Agendamento.js
-â”‚  â””â”€ Equipamentos.js
+â”‚  â”œâ”€ Jogos.js
+â”‚  â”œâ”€ Estádios.js
+â”‚  â”œâ”€ Campeonatos.js
+â”‚  â””â”€ Equipes.js
 â”œâ”€ database/
 â”‚  â”œâ”€ create-and-populate.js
 â”‚  â”œâ”€ config.js
 â”‚  â””â”€ database.db
 â”œâ”€ routes/
-â”‚  â”œâ”€ fisioterapeuta.js
-â”‚  â”œâ”€ pacientes.js
-â”‚  â”œâ”€ agendamento.js
-â”‚  â””â”€ euipamentos.js
+â”‚  â”œâ”€ jogos.js
+â”‚  â”œâ”€ estádios.js
+â”‚  â”œâ”€ campeonatos.js
+â”‚  â””â”€ equipes.js
 â””â”€ main.js
 ```
 
@@ -64,52 +63,52 @@ src/
 <samp>
   
 > **Warning** 
-> PrÃ©-Requisitos: Git, Node.js e um editor de cÃ³digo.
+> Pré-Requisitos: Git, Node.js e um editor de cÃ³digo.
 
 </samp>
 
 ## Rotas CRUD
 
-### [ 1 ] <em>Fisioterapeuta</em>
+ [ 1 ] <em>Jogos</em>
 
-| MÃ©todo | Rota | DescriÃ§Ã£o |
+| Método | Rota | Descriçao |
 | ------ | ----- | ----------- |
-| **`GET`** | **/fisioterapeutas** | Retorna todos os fisioterapeutas. |
-|  **`GET`** | **/fisioterapeuta/id** | Retorna um fisioterapeuta. |
-|  **`POST`** | **/fisioterapeuta** | Cria um novo fisioterapeuta.  |
-|  **`PUT`** | **/fisioterapeuta/id** | Altera os dados do fisioterapeuta.
-|  **`DELETE`** | **/fisioterapeuta/id** | Remove o fisioterapeuta.
+| **`GET`** | **/Jogos** | Retorna todos os Jogos. 
+|  **`GET`** | **Jogos/id** | Retorna a um Jogo. 
+|  **`POST`** | **/Jogos** | Cria um novo Jogo.  
+|  **`PUT`** | **/Jogos/id** | Altera os dados de um Jogo.
+|  **`DELETE`** | **/Jogos/id** | Remove um Jogo.
   
-### [ 2 ] <em>Pacientes</em>
+### [ 2 ] <em>Estádios</em>
 
-| MÃ©todo | Rota | DescriÃ§Ã£o |
+| Método | Rota | Descriçao |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/pacientes** | Retorna todos os Pacientes. |
-|  **`GET`** | **/paciente/id** | Retorna um Paciente. |
-|  **`POST`** | **/paciente** | Cria um novo Paciente.  |
-|  **`PUT`** | **/paciente/id** | Altera os dados do Paciente.
-|  **`DELETE`** | **/paciente/id** | Remove o Paciente.
+|  **`GET`** | **/estádios** | Retorna todos os Estádios. 
+|  **`GET`** | **/estádios/id** | Retorna um Estádio. 
+|  **`POST`** | **/estádio** | Cria um novo Estádio.  
+|  **`PUT`** | **/estádio/id** | Altera os dados do Estádio.
+|  **`DELETE`** | **/estádio/id** | Remove o Estádio.
   
   
-### [ 2 ] <em>Agendamento</em>
+ [ 3 ] <em>A</em>
 
-| MÃ©todo | Rota | DescriÃ§Ã£o |
+| Método | Rota | Descriçao |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/agendamentos** | Retorna todos os agendamentos. |
-|  **`GET`** | **/agendamento/id** | Retorna um agendamento. |
-|  **`POST`** | **/agendamento** | Cria um novo agendamento.  |
-|  **`PUT`** | **/agendamento/id** | Altera os dados do agendamento.
-|  **`DELETE`** | **/agendamento/id** | Remove o agendamento.
+|  **`GET`** | **/campeonatos** | Retorna todos os campeonatos. |
+|  **`GET`** | **/campeonatos/id** | Retorna um campeonato. |
+|  **`POST`** | **/campeonatos** | Cria um novo campeonato.  |
+|  **`PUT`** | **/campeonatos/id** | Altera os dados do campeonato.
+|  **`DELETE`** | **/campeonatos/id** | Remove o campeonato.
 
 
-### [ 2 ] <em>Equipamentos</em>
+ [ 4 ] <em>Equipamentos</em>
 
-| MÃ©todo | Rota | DescriÃ§Ã£o |
+| Método | Rota | Descriçao |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/equipamentos** | Retorna todos os equipamentos. |
-|  **`GET`** | **/equipamento/id** |  Retorna um equipamento. |
-|  **`POST`** | **/equipamento** | Cria um novo mequipamento.  |
-|  **`PUT`** | **/equipamento/id** | Altera os dados do equipamento.
-|  **`DELETE`** | **/equipamento/id** | Remove o equipamento.
+|  **`GET`** | **/Equipes** | Retorna todos as Equipes. |
+|  **`GET`** | **/Equipe/id** |  Retorna uma Equipe. |
+|  **`POST`** | **/Equipe** | Cria uma nova Equipe.  |
+|  **`PUT`** | **/Equipe/id** | Altera os dados de uma equipe.
+|  **`DELETE`** | **/Equipe/id** | Remove uma Equipe.
   
 
